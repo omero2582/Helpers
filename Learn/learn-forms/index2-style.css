@@ -1,0 +1,43 @@
+body {
+    background-color: #fff;
+    color: #333;
+    font: 1em / 1.4 Helvetica Neue, Helvetica, Arial, sans-serif;
+    padding: 1em;
+    margin: 0;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  li>label{
+      display: inline-block;
+      vertical-align: top;
+      text-align: left;
+  }
+  li{
+      list-style: none;
+  }
+  li + li {
+      margin-top: 10px;
+  }
+
+  button, label{
+      width: 120px;
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+  }
+  
+
+  /*TODO BELOW ARE SOME GOOD BASELINES TO ALWAYS USE*/
+
+  button, input, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+
+    /* width : 150px; */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }

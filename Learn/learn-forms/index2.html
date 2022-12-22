@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index2-style.css">
+    <script src="index2.js" defer></script>
+    <title>HTML5 controls: Task 1</title>
+</head>
+<body>
+    <form action="http://httpbin.org/post" method="post">
+        <section>
+            <h2>Edit your preferences</h2>
+            <ul>
+                <li>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                </li>
+                <li>
+                    <label for="website-name">Webstie</label>
+                    <input type="url" id="website-name" name="webstie-name">
+                </li>
+                <li>
+                    <label for="phone-number">Phone number</label>
+                    <input type="tel" id="phone-number" name="phone-number">
+                </li>
+                <li>
+                    <label for="favorite-color">Favorite color</label>
+                    <input type="color" id="favorite-color" name="color">
+                </li>
+                <li>
+                    <button>Update preferences</button>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2>Party Details</h2>
+            <p>
+                <label for="max-invites">Choose a maximum number of invitations</label><br>
+                <input type="range" name="max-invites" id="max-invites" value="10" min="1" max="30">
+                <output class="invite-output" for="max-invites"></output>
+            </p>
+        </section>
+    </form>
+</body>
+</html>

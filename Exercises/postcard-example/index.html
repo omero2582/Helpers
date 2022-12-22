@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postcard example</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="http://httpbin.org/post" method="post">
+        <h1>to: Mozilla</h1>
+
+        <div id="from">
+            <label for="name">from:</label>
+            <input type="text" name="name" id="user_name">
+        </div>
+
+        <div id="reply">
+            <label for="email">reply:</label>
+            <input type="email" name="email" id="user_email">
+        </div>
+
+        <div id="message">
+            <label for="message">Your Message:</label>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        </div>
+
+        <div>
+            <button>Send your message</button>
+        </div>
+    </form>
+</body>
+</html>

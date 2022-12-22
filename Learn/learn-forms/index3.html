@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Other controls 1</title>
+    <link rel="stylesheet" href="index2-style.css">
+</head>
+<body>
+    <form action="http://httpbin.org/post" method="post">
+    <h2>Enter your comment</h2>
+    <ul>
+        <li>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+        </li>
+        <li>
+            <label for="comment">Comment:</label>
+            <textarea name="comment" id="comment" cols="30" rows="10" maxlength="100"></textarea>
+        </li>
+        <li>
+            <label for="favorite-food">Pick yout favorite food:</label>
+            <select id="favorite-food" name="favorite-food">
+                <optgroup label="Mains">
+                    <option>Salad</option>
+                    <option>Curry</option>
+                    <option>Pizza</option>
+                </optgroup>
+
+                <optgroup label="Snacks">
+                    <option>Fajitas</option>
+                    <option>Biscuits</option>
+                    <option>Crisps</option>
+                    <option>Fruit</option>
+                    <option>Breadsticks</option>
+                </optgroup>
+            </select>
+        </li>
+         <li>  <!--second version (autocomplete) -->
+            <label for="foodV2">Enter your favorite food V2:</label>
+            <input type="text" name="foodV2" id="foodV2" list="foodList">
+
+            <datalist id="foodList">
+                <label for="altfoodV2">or pick:</label>
+                <select id="altfoodV2" name="altfoodV2">
+                    <optgroup label="Mains">
+                        <option>Salad</option>
+                        <option>Curry</option>
+                        <option>Pizza</option>
+                    </optgroup>
+                    <optgroup label="Snacks">
+                        <option>Fajitas</option>
+                        <option>Biscuits</option>
+                        <option>Crisps</option>
+                        <option>Fruit</option>
+                        <option>Breadsticks</option>
+                    </optgroup>
+                </select>
+            </datalist>
+        </li>
+        <li>
+            <button>Submit</button>
+        </li>
+    </ul>
+</form>
+</body>
+</html>

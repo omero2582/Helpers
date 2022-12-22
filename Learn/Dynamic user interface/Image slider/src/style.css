@@ -1,0 +1,50 @@
+:root{
+    --content-color: antiquewhite;
+    --slider-color: lightblue;
+}
+
+.content{
+    height: 500px;
+    background-color: var(--content-color);
+
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
+.image-slider{
+    width: 480px;
+    height: 270px;
+    border: 5px solid black;
+    background-color:var(--slider-color);
+
+    display: flex;
+    /* overflow: hidden; */
+}
+
+.image-slider img{
+    width: 100%;
+    height: 100%;
+    
+    flex: 0 0 auto;
+    transition: 1s;
+    position: relative;
+    right:0px;
+    
+}
+
+.selected{
+    /* animation: slide 1500ms ease-in-out;
+    animation-fill-mode: forwards; */
+}
+
+@keyframes slide {
+    0%{
+        transform: translateX(-100%);
+        /* margin-left: -100%; */
+    }
+    100%{
+        transform: translateX(0);
+        /* margin-left: 0%; */
+    }
+}

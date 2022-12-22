@@ -1,0 +1,21 @@
+form{
+    background-color: bisque;
+    max-width: 450px;
+    
+}
+
+form>div{
+        position: relative;
+}
+
+div>label{
+    position: absolute;
+    left: 30px;
+    top: 2px;
+    opacity: 0.3;
+
+}
+
+input:focus + label{
+    opacity: 0;
+}
